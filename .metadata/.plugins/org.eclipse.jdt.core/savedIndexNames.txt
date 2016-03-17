@@ -1,0 +1,19 @@
+INDEX VERSION 1.127+C:\Users\Luke\Documents\GitHub\CS1632_Assignment4\.metadata\.plugins\org.eclipse.jdt.core
+826450147.index
+892521662.index
+3812382772.index
+3096856090.index
+3165955224.index
+3088411636.index
+3132091572.index
+1098600929.index
+3558619241.index
+948261670.index
+185119300.index
+588025183.index
+3430646409.index
+2199731907.index
+1734357091.index
+863124391.index
+1518504506.index
+3129510151.index
