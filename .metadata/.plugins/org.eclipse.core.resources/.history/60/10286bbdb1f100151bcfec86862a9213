@@ -39,10 +39,8 @@ public class ArraysTest
 		}
 	}*/
 	
-	//Generates an array of given size and 
-	//fills the array with random ints
-	public int[] createArray(int ArraySize) 	
-	{											
+	public int[] createArray(int ArraySize) 	//Generates an array of given size and 
+	{											//fills the array with random ints
 		//Random rnd = new Random();
 		//rnd.setSeed(1000);
 		Random newRnd = new Random();

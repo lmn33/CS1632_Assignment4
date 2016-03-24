@@ -38,7 +38,6 @@ public class ArraysTest
 			//8.Only ints are entered
 		}
 	}*/
-	
 	//Generates an array of given size and 
 	//fills the array with random ints
 	public int[] createArray(int ArraySize) 	

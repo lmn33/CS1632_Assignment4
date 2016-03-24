@@ -39,10 +39,8 @@ public class ArraysTest
 		}
 	}*/
 	
-	//Generates an array of given size and 
-	//fills the array with random ints
-	public int[] createArray(int ArraySize) 	
-	{											
+	public int[] createArray(int ArraySize) 	//Generates an array of given size and 
+	{											//fills the array with random ints
 		//Random rnd = new Random();
 		//rnd.setSeed(1000);
 		Random newRnd = new Random();
@@ -55,11 +53,9 @@ public class ArraysTest
 		return numbers;
 	}
 	
-	//runs the createArray method and guarantees
-	//that the size passed in is the array size
 	@Test
-	public void testShowsCorrectSize() 			
-	{											
+	public void testShowsCorrectSize() 			//runs the createArray method and guarantees
+	{											//that the size passed in is the array size
 		for(int i=0;i<150;++i)
 		{
 			Random rnd = new Random();
@@ -73,13 +69,10 @@ public class ArraysTest
 		
 	}
 	
-	//runs the createArray method and guarantees
-	//that the java sort() method has the beggining
-	//and end items in the correct order
 	@Test
-	public void beginningEndSort()							
-	{														
-		for(int i=0;i<150;++i)								
+	public void beginningEndSort()
+	{
+		for(int i=0;i<150;++i)
 		{
 			Random rnd = new Random();
 			//rnd.setSeed(1000);
@@ -92,13 +85,10 @@ public class ArraysTest
 		}
 	}
 	
-	//runs the createArray method and guarantees
-	//that the values do not change if the sort method
-	//is called multiple times
 	@Test
-	public void runningSortMultipleTimesTest()					
-	{															
-		for(int i=0;i<150;++i)								
+	public void runningSortMultipleTimesTest()
+	{
+		for(int i=0;i<150;++i)
 		{
 			Random rnd = new Random();
 			//rnd.setSeed(1000);
