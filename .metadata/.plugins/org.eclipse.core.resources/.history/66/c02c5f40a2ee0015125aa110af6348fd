@@ -1,0 +1,29 @@
+import java.util.Random;
+
+public class Arrays 
+{
+	
+	public static void main(String [] args)
+	{
+		Random rnd = new Random();
+		rnd.setSeed(1000);
+		for(int i=0; i<106; ++i)
+		{
+			int size=rnd.nextInt();
+			int[] numbers=new int[size];
+			for(int k=size-1;k>=0;--k)
+			{
+				numbers[k]=k;
+			}
+			//Check output array same size as array passed in
+			//Values in output array always increasing or staying
+			//Value in output array never decreasing
+			//Every element in input array is in output array
+			//No element not in input array is in output array
+			//Idempotent - running it again should not change output array
+			//Pure - running it twice on same input array should always result in same output array
+			//Only ints are entered
+		}
+	}
+	
+}

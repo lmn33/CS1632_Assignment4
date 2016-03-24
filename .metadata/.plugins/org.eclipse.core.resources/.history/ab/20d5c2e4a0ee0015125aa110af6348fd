@@ -1,0 +1,10 @@
+
+public class Arrays 
+{
+	int[] cars;
+	public static void main(String [] args)
+	{
+		
+	}
+	
+}

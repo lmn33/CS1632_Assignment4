@@ -1,0 +1,66 @@
+import java.util.Random;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+import java.util.Arrays;
+
+public class ArraysTest 
+{
+	static int size;
+	static int actualSize;
+	static int[] numbers;
+	/*public static void main(String [] args)
+	{
+		Random rnd = new Random();
+		rnd.setSeed(1000);
+		for(int i=0; i<106; ++i)
+		{
+			Random newRnd = new Random();
+			size=rnd.nextInt();
+			numbers=new int[size];
+			for(int k=0;k<size;++k)
+			{
+				numbers[k]=newRnd.nextInt();
+			}
+			Arrays.sort(numbers);
+			actualSize=numbers.length;
+			
+			//1.Check output array same size as array passed in
+			//2.Values in output array always increasing or staying
+			//3.Value in output array never decreasing
+			//4.Every element in input array is in output array
+			//5.No element not in input array is in output array
+			//6.Idempotent - running it again should not change output array
+			//7.Pure - running it twice on same input array should always result in same output array
+			//8.Only ints are entered
+		}
+	}*/
+	
+	public void createArray() 
+	{
+		Random rnd = new Random();
+		rnd.setSeed(1000);
+		Random newRnd = new Random();
+		size=rnd.nextInt();
+		numbers=new int[size];
+		for(int k=0;k<size;++k)
+		{
+			numbers[k]=newRnd.nextInt();
+		}
+	}
+	
+	@Test
+	public void testShowsCorrectSize() 
+	{
+		assertTrue(size==numbers.length-1);
+	}
+	
+	@Test
+	public void beginningEndSort()
+	{
+		assertTrue(numbers[0]==numbers[numbers.length-1]);
+	}
+}
